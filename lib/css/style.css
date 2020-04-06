@@ -1,0 +1,183 @@
+/*ABAS*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: aqua;
+    font-family: 'Arial';
+}
+
+.nav_tabs{
+    width: 1200px;
+    height: 400px;
+    margin: 50px 145px auto;
+    background-color: #fff;
+    position: relative;
+}
+
+.nav_tabs ul{
+    list-style: none;
+}
+
+.nav_tabs ul li{
+    float: left;
+}
+
+.nav_tabs #label{
+    width: 130px;
+    height: 65px;
+    padding: 8px;
+    background-color: cadetblue;
+    font-size: 18px;
+    display: block;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+
+.rd_tabs:checked ~ #label{
+    background-color: lightskyblue;
+}
+
+.rd_tabs{
+    display: none;
+}
+
+.content{
+    margin-top: -8px;
+    border-top: 5px solid steelblue;
+    display: none;
+    position: absolute;
+    height: 20px;
+    width: 1040px;
+    left: 0px;
+
+}
+
+.content div{
+  
+
+}
+
+.rd_tabs:checked ~ .content{
+    display: block;
+}
+
+/*conteudo da XML*/
+#header_menu{
+
+}
+
+#header_sub_menu{
+    margin-top: 10px;
+}
+
+
+#h3_titulo{
+    text-align: center;
+    font-size: 24px;
+}
+
+#h3_sub_titulo{
+    text-align: left;
+    font-size: 22px;
+    
+}
+
+#linha_menu{
+    border-top: 1px solid black;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+#conteudo_menu{
+    background-color: #d3d3d3;
+    border: skyblue 2px solid;
+    width: 1040px;
+    padding: 10px;
+    margin: 0;
+}
+
+#conteudo_menu2{
+    background-color: #d3d3d3;
+    border: skyblue 2px solid;
+    width: 800px;
+    padding: 10px 10px;
+    margin: 0 130px;
+    text-align: center;
+}
+
+#conteudo_menu3{
+    background-color: #d3d3d3;
+    border: skyblue 2px solid;
+    width: 800px;
+    padding: 10px 10px;
+    margin: 0 130px;
+}
+
+#conteudo_menu4{
+    background-color: #d3d3d3;
+    border: skyblue 2px solid;
+    width: 1040px;
+    padding: 10px 10px;
+    margin: 0;
+    
+}
+
+#label_xml{
+    font-weight: bold;
+    font-size: 14px;  
+    display: block;
+}
+
+#input_super_small{
+    width: 30px;
+    text-align: center;
+}
+
+#input_small{
+    width: 80px;
+    text-align: center;
+}
+
+#input_big{
+    width: 250px;
+    text-align: center;
+}
+
+#input_big_big{
+    width: 300px;
+    text-align: center;
+}
+
+#input_grande{
+    width: 300px;
+    height: 45px;
+    text-align: center;
+}
+
+#input_media_grande{
+    width: 210px;
+    text-align: center;
+}
+
+#input_media{
+    width: 170px;
+    text-align: center;
+}
+
+#input_mega{
+    width: 500px;
+    text-align: center;
+}
+
+.col{
+    width: 100px;
+}
+
+
+
+
+
