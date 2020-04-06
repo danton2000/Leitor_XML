@@ -83,8 +83,16 @@ body{
 #h3_sub_titulo{
     text-align: left;
     font-size: 22px;
-    
 }
+
+#h3_sub_titulo2{
+    text-align: left;
+    font-size: 19px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+
 
 #linha_menu{
     border-top: 1px solid black;
@@ -152,9 +160,14 @@ body{
     text-align: center;
 }
 
+#input_big_big2{
+    width: 370px;
+    text-align: center;
+}
+
 #input_grande{
     width: 300px;
-    height: 45px;
+    height: 30px;
     text-align: center;
 }
 
@@ -173,6 +186,10 @@ body{
     text-align: center;
 }
 
+#input_mega2{
+    width: 1000px;
+    text-align: center;
+}
 
 
 

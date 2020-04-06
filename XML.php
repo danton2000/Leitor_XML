@@ -344,6 +344,104 @@
                                     <label id="label_xml">Valor do Seguro</label>
                                     <input type="text" id="input_media" value="<?php ?>" readonly>
                                 </div>
+
+                                <div class="col">
+                                    <label id="label_xml">Indicador de Composicão do Valor Total da NF-e</label>
+                                    <input type="text" id="input_mega2" value="<?php ?>" readonly>
+                                </div>
+
+                                <div class="col-4">
+                                    <label id="label_xml">Código EAN Comercial</label>
+                                    <input type="text" id="input_media_grande" value="<?php ?>" readonly>
+                                </div>
+
+                                <div class="col-4">
+                                    <label id="label_xml">Unidade Comercial</label>
+                                    <input type="text" id="input_media_grande" value="<?php ?>" readonly>
+                                </div>
+
+                                <div class="col-4">
+                                    <label id="label_xml">Quantidade Comercial</label>
+                                    <input type="text" id="input_media_grande" value="<?php ?>" readonly>
+                                </div>
+
+                                <div class="col-4">
+                                    <label id="label_xml">Código EAN Tributável</label>
+                                    <input type="text" id="input_media_grande" value="<?php ?>" readonly>
+                                </div>
+
+                                <div class="col-4">
+                                    <label id="label_xml">Unidade Tributável</label>
+                                    <input type="text" id="input_media_grande" value="<?php ?>" readonly>
+                                </div>
+
+                                <div class="col-4">
+                                    <label id="label_xml">Quantidade Tributável</label>
+                                    <input type="text" id="input_media_grande" value="<?php ?>" readonly>
+                                </div>
+
+                                <div class="col-4">
+                                    <label id="label_xml">Valor unitário de comercialização</label>
+                                    <input type="text" id="input_media_grande" value="<?php ?>" readonly>
+                                </div>
+
+                                <div class="col-5">
+                                    <label id="label_xml">Valor unitário de tributação</label>
+                                    <input type="text" id="input_media_grande" value="<?php ?>" readonly>
+                                </div>
+
+                                <div class="col-4">
+                                    <label id="label_xml">Número do pedido de compra</label>
+                                    <input type="text" id="input_media_grande" value="<?php ?>" readonly>
+                                </div>
+
+                                <div class="col-4">
+                                    <label id="label_xml">Item do pedido de compra</label>
+                                    <input type="text" id="input_media_grande" value="<?php ?>" readonly>
+                                </div>
+
+                                <div class="col-4">
+                                    <label id="label_xml">Valor Aproximado dos Tributos</label>
+                                    <input type="text" id="input_media_grande" value="<?php ?>" readonly>
+                                </div>
+
+                                <div class="col-12">
+                                    <label id="label_xml">Número da FCI</label>
+                                    <input type="text" id="input_media_grande" value="<?php ?>" readonly>
+                                </div>
+                                
+                                <div class="col-12">
+                                    <h3 id="h3_sub_titulo2">ICMS Normal e ST</h3>
+                                </div>
+                                
+                                <div class="col">
+                                    <label id="label_xml">Origem de Mercadoria</label>
+                                    <input type="text" id="input_big_big2" value="<?php ?>" readonly>
+                                </div>
+
+                                <div class="col">
+                                    <label id="label_xml">Código de Situação da Operação - Simples Nacional</label>
+                                    <input type="text" id="input_big_big2" value="<?php ?>" readonly>
+                                </div>
+
+                                <div class="col-12">
+                                    <h3 id="h3_sub_titulo2">PIS</h3>
+                                </div>
+
+                                <div class="col">
+                                    <label id="label_xml">CST</label>
+                                    <input type="text" id="input_mega2" value="<?php ?>" readonly>
+                                </div>
+
+                                <div class="col-12">
+                                    <h3 id="h3_sub_titulo2">COFINS</h3>
+                                </div>
+
+                                <div class="col">
+                                    <label id="label_xml">CST</label>
+                                    <input type="text" id="input_mega2" value="<?php ?>" readonly>
+                                </div>
+
                             </div>
                         </div>
                     </div>
