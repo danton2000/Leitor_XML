@@ -276,23 +276,23 @@
                         <hr id="linha_menu">
                         <div id="conteudo_menu4" class="container">
                             <div class="row">
-                                <div class="col-3">
+                                <div class="col">
                                     <label id="label_xml">Num.</label>
                                     <input type="text" id="input_super_small" value="<?php ?>" readonly>
                                 </div>
-                                <div class="col-3">
+                                <div class="col">
                                     <label id="label_xml">Descrição</label>
                                     <input type="text" id="input_grande" value="<?php ?>" readonly>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col">
                                     <label id="label_xml">Qtd</label>
                                     <input type="text" id="input_small" value="<?php ?>" readonly>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col">
                                     <label id="label_xml">Unidade Comercial</label>
                                     <input type="text" id="input_small" value="<?php ?>" readonly>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col">
                                     <label id="label_xml">Valor(R$)</label>
                                     <input type="text" id="input_small" value="<?php ?>" readonly>
                                 </div>
