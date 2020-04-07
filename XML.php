@@ -28,22 +28,27 @@
                                 <label id="label_xml">Modelo</label>
                                 <input type="text" id="input_small" value="<?php ?>" readonly>
                             </div>
+
                             <div class="col">
                                 <label id="label_xml">Serie</label>
                                 <input type="text" id="input_small" value="<?php ?>" readonly>
                             </div>
+
                             <div class="col">
                                 <label id="label_xml">Numero</label>
                                 <input type="text" id="input_small" value="<?php ?>" readonly>
                             </div>
+
                             <div class="col">
                                 <label id="label_xml">Data de Emissão</label>
                                 <input type="text" id="input_media" value="<?php ?>" readonly>
                             </div>
+
                             <div class="col">
                                 <label id="label_xml">Data Saída/Entrada</label>
                                 <input type="text" id="input_media" value="<?php ?>" readonly>
                             </div>
+
                             <div class="col">
                                 <label id="label_xml">Valor total da Nota Fiscal</label>
                                 <input type="text" id="input_media" value="<?php ?>" readonly>
@@ -86,26 +91,32 @@
                                 <label id="label_xml">Processo</label>
                                 <input type="text" value="<?php ?>" readonly>
                             </div>
+
                             <div class="col-md-3">
                                 <label id="label_xml">Versão do Processo</label>
                                 <input type="text" id="input_media" value="<?php ?>" readonly>
                             </div>
+
                             <div class="col-md-3">
                                 <label id="label_xml">Tipo de Emissão</label>
                                 <input type="text" id="input_media" value="<?php ?>" readonly>
                             </div>
+
                             <div class="col-md-3">
                                 <label id="label_xml">Finalidade</label>
                                 <input type="text" id="input_media" value="<?php ?>" readonly>
                             </div>
+
                             <div class="col-md-3">
                                 <label id="label_xml">Natureza da Operação</label>
                                 <input type="text" id="" value="<?php ?>" readonly>
                             </div>
+
                             <div class="col-md-3">
                                 <label id="label_xml">Tipo da Operação</label>
                                 <input type="text" id="input_media" value="<?php ?>" readonly>
                             </div>
+
                             <div class="col-md-3">
                                 <label id="label_xml">Forma de Pagamento</label>
                                 <input type="text" id="input_big" value="<?php ?>" readonly>
@@ -129,66 +140,82 @@
                                     <label id="label_xml">Nome/Razão Social</label>
                                     <input type="text" id="input_big_big" value="<?php ?>" readonly>
                                 </div>
+
                                 <div class="col-sm-6">
                                     <label id="label_xml">Nome Fantasia</label>
                                     <input type="text" id="input_big_big" value="<?php ?>" readonly>
                                 </div>
+
                                 <div class="col-sm-6">
                                     <label id="label_xml">CNPJ</label>
                                     <input type="text" id="input_big_big" value="<?php ?>" readonly>
                                 </div>
+
                                 <div class="col-sm-6">
                                     <label id="label_xml">Endereço</label>
                                     <input type="text" id="input_big_big" value="<?php ?>" readonly>
                                 </div>
+
                                 <div class="col-sm-6">
                                     <label id="label_xml">Bairro</label>
                                     <input type="text" id="input_big_big" value="<?php ?>" readonly>
                                 </div>
+
                                 <div class="col-sm-6">
                                     <label id="label_xml">CEP</label>
                                     <input type="text" id="input_big_big" value="<?php ?>" readonly>
                                 </div>
+
                                 <div class="col-sm-6">
                                     <label id="label_xml">Município</label>
                                     <input type="text" id="input_big_big" value="<?php ?>" readonly>
                                 </div>
+
                                 <div class="col-sm-6">
                                     <label id="label_xml">Telefone</label>
                                     <input type="text" id="input_big_big" value="<?php ?>" readonly>
                                 </div>
+
                                 <div class="col-sm-6">
                                     <label id="label_xml">UF</label>
                                     <input type="text" id="input_big_big" value="<?php ?>" readonly>
                                 </div>
+
                                 <div class="col-sm-6">
                                     <label id="label_xml">Pais</label>
                                     <input type="text" id="input_big_big" value="<?php ?>" readonly>
                                 </div>
+
                                 <div class="col-sm-6">
                                     <label id="label_xml">Inscrição Estadual</label>
                                     <input type="text" id="input_big_big" value="<?php ?>" readonly>
                                 </div>
+
                                 <div class="col-sm-6">
                                     <label id="label_xml">Inscrição Estadual do Substituto <br> Tributário</label>
                                     <input type="text" id="input_big_big" value="<?php ?>" readonly>
                                 </div>
+
                                 <div class="col-sm-6">
                                     <label id="label_xml">Inscrição Municipal</label>
                                     <input type="text" id="input_big_big" value="<?php ?>" readonly>
                                 </div>
+
                                 <div class="col-sm-6">
                                     <label id="label_xml">Município da Ocorrência do Fato <br> Gerador do ICMS</label>
                                     <input type="text" id="input_big_big" value="<?php ?>" readonly>
                                 </div>
+
                                 <div class="col-sm-6">
                                     <label id="label_xml">CNAE Fiscal</label>
                                     <input type="text" id="input_big_big" value="<?php ?>" readonly>
                                 </div>
+
                                 <div class="col-sm-6">
                                     <label id="label_xml">Código do Regime Tributário</label>
                                     <input type="text" id="input_big_big" value="<?php ?>" readonly>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -209,54 +236,67 @@
                                     <label id="label_xml">Nome/Razão Social</label>
                                     <input type="text" id="input_mega" value="<?php ?>" readonly>
                                 </div>
+                                
                                 <div class="col-sm-6">
                                     <label id="label_xml">CNPJ/CPF/Id.Estrangeiro</label>
                                     <input type="text" id="input_media_grande" value="<?php ?>" readonly>
                                 </div>
+                                
                                 <div class="col-sm-6">
                                     <label id="label_xml">Endereço</label>
                                     <input type="text" id="input_media_grande" value="<?php ?>" readonly>
                                 </div>
+                                
                                 <div class="col-sm-6">
                                     <label id="label_xml">Bairro/Distrito</label>
                                     <input type="text" id="input_media_grande" value="<?php ?>" readonly>
                                 </div>
+                                
                                 <div class="col-sm-6">
                                     <label id="label_xml">CEP</label>
                                     <input type="text" id="input_media_grande" value="<?php ?>" readonly>
                                 </div>
+                                
                                 <div class="col-sm-6">
                                     <label id="label_xml">Município</label>
                                     <input type="text" id="input_media_grande" value="<?php ?>" readonly>
                                 </div>
+                                
                                 <div class="col-sm-6">
                                     <label id="label_xml">Telefone</label>
                                     <input type="text" id="input_media_grande" value="<?php ?>" readonly>
                                 </div>
+                                
                                 <div class="col-sm-6">
                                     <label id="label_xml">UF</label>
                                     <input type="text" id="input_media_grande" value="<?php ?>" readonly>
                                 </div>
+                                
                                 <div class="col-sm-6">
                                     <label id="label_xml">Pais</label>
                                     <input type="text" id="input_media_grande" value="<?php ?>" readonly>
                                 </div>
+                                
                                 <div class="col-sm-4">
                                     <label id="label_xml">Indicador IE</label>
                                     <input type="text" id="input_media" value="<?php ?>" readonly>
                                 </div>
+                                
                                 <div class="col-sm-4">
                                     <label id="label_xml">Inscrição Estadual</label>
                                     <input type="text" id="input_media" value="<?php ?>" readonly>
                                 </div>
+                                
                                 <div class="col-sm-4">
                                     <label id="label_xml">Inscrição Suframa</label>
                                     <input type="text" id="input_media" value="<?php ?>" readonly>
                                 </div>
+                                
                                 <div class="col">
                                     <label id="label_xml">IM</label>
                                     <input type="text" id="input_media" value="<?php ?>" readonly>
                                 </div>
+                                
                                 <div class="col">
                                     <label id="label_xml">E-mail</label>
                                     <input type="text" id="input_big_big" value="<?php ?>" readonly>
@@ -409,11 +449,11 @@
                                     <label id="label_xml">Número da FCI</label>
                                     <input type="text" id="input_media_grande" value="<?php ?>" readonly>
                                 </div>
-                                
+
                                 <div class="col-12">
                                     <h3 id="h3_sub_titulo2">ICMS Normal e ST</h3>
                                 </div>
-                                
+
                                 <div class="col">
                                     <label id="label_xml">Origem de Mercadoria</label>
                                     <input type="text" id="input_big_big2" value="<?php ?>" readonly>
@@ -441,7 +481,6 @@
                                     <label id="label_xml">CST</label>
                                     <input type="text" id="input_mega2" value="<?php ?>" readonly>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -455,6 +494,129 @@
                         <hr id="linha_menu">
                         <h3 id="h3_titulo">Totais</h3>
                         <hr id="linha_menu">
+                       
+                        <div class="col-12">
+                            <h3 id="h3_sub_titulo2">ICMS</h3>
+                        </div>
+
+                        <div id="conteudo_menu4" class="container">
+                            <div class="row">
+                                <div class="col-3">
+                                    <label id="label_xml">Base de Cálculo ICMS</label>
+                                    <input type="text" id="input_media" value="<?php ?>" readonly>
+                                </div>
+
+                                <div class="col-3">
+                                    <label id="label_xml">Valor do ICMS</label>
+                                    <input type="text" id="input_media" value="<?php ?>" readonly>
+                                </div>
+
+                                <div class="col-3">
+                                    <label id="label_xml">Valor do ICMS Desonerado</label>
+                                    <input type="text" id="input_media" value="<?php ?>" readonly>
+                                </div>
+
+                                <div class="col-3">
+                                    <label id="label_xml">Valor Total do FCP</label>
+                                    <input type="text" id="input_media" value="<?php ?>" readonly>
+                                </div>
+
+                                <div class="col-3">
+                                    <label id="label_xml">Valor Total ICMS FCP</label>
+                                    <input type="text" id="input_media" value="<?php ?>" readonly>
+                                </div>
+
+                                <div class="col-3">
+                                    <label id="label_xml">Valor Total ICMS Interestadual UF Destino</label>
+                                    <input type="text" id="input_media" value="<?php ?>" readonly>
+                                </div>
+
+                                <div class="col-3">
+                                    <label id="label_xml">Valor Total ICMS Interestadual UF Rem.</label>
+                                    <input type="text" id="input_media" value="<?php ?>" readonly>
+                                </div>
+
+                                <div class="col-3">
+                                    <label id="label_xml">Base de Cálculo ICMS ST</label>
+                                    <input type="text" id="input_media" value="<?php ?>" readonly>
+                                </div>
+
+                                <div class="col-3">
+                                    <label id="label_xml">Valor ICMS Substituição</label>
+                                    <input type="text" id="input_media" value="<?php ?>" readonly>
+                                </div>
+
+                                <div class="col-3">
+                                    <label id="label_xml">Valor Total do FCP retido por ST</label>
+                                    <input type="text" id="input_media" value="<?php ?>" readonly>
+                                </div>
+
+                                <div class="col-3">
+                                    <label id="label_xml">Valor Total do FCP retido anteriormente por ST</label>
+                                    <input type="text" id="input_media" value="<?php ?>" readonly>
+                                </div>
+                                
+                                <div class="col-3">
+                                    <label id="label_xml">Valor Total dos Produtos</label>
+                                    <input type="text" id="input_media" value="<?php ?>" readonly>
+                                </div>
+
+                                <div class="col-3">
+                                    <label id="label_xml">Valor do Frete</label>
+                                    <input type="text" id="input_media" value="<?php ?>" readonly>
+                                </div>
+
+                                <div class="col-3">
+                                    <label id="label_xml">Valor do Seguro</label>
+                                    <input type="text" id="input_media" value="<?php ?>" readonly>
+                                </div>
+
+                                <div class="col-3">
+                                    <label id="label_xml">Valor Total dos Descontos</label>
+                                    <input type="text" id="input_media" value="<?php ?>" readonly>
+                                </div>
+
+                                <div class="col-3">
+                                    <label id="label_xml">Valor Total do II</label>
+                                    <input type="text" id="input_media" value="<?php ?>" readonly>
+                                </div>
+
+                                <div class="col-3">
+                                    <label id="label_xml">Valor Total do IPI</label>
+                                    <input type="text" id="input_media" value="<?php ?>" readonly>
+                                </div>
+
+                                <div class="col-3">
+                                    <label id="label_xml">Valor Total do IPI Devolvido</label>
+                                    <input type="text" id="input_media" value="<?php ?>" readonly>
+                                </div>
+
+                                <div class="col-3">
+                                    <label id="label_xml">Valor do PIS</label>
+                                    <input type="text" id="input_media" value="<?php ?>" readonly>
+                                </div>
+
+                                <div class="col-3">
+                                    <label id="label_xml">Valor da CONFINS</label>
+                                    <input type="text" id="input_media" value="<?php ?>" readonly>
+                                </div>
+
+                                <div class="col-3">
+                                    <label id="label_xml">Outras Despesas Acessórios</label>
+                                    <input type="text" id="input_media" value="<?php ?>" readonly>
+                                </div>
+
+                                <div class="col-3">
+                                    <label id="label_xml">Valor Total da NFe</label>
+                                    <input type="text" id="input_media" value="<?php ?>" readonly>
+                                </div>
+                                
+                                <div class="col-3">
+                                    <label id="label_xml">Valor Aproximado dos Tributos</label>
+                                    <input type="text" id="input_media" value="<?php ?>" readonly>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </li>

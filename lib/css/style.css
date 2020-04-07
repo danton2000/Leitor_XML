@@ -90,9 +90,9 @@ body{
     font-size: 19px;
     font-weight: bold;
     margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
-
-
 
 #linha_menu{
     border-top: 1px solid black;
@@ -135,6 +135,8 @@ body{
 }
 
 #label_xml{
+    margin-bottom: 10px;
+    margin-top: 10px;
     font-weight: bold;
     font-size: 14px;  
     display: block;
