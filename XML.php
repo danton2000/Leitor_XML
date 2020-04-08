@@ -626,8 +626,17 @@
                 <div class="content">
                     <div id="header_menu">
                         <hr id="linha_menu">
-                        <h3 id="h3_titulo">Transporte</h3>
+                        <h3 id="h3_titulo">Dados do Transporte</h3>
                         <hr id="linha_menu">
+
+                        <div id="conteudo_menu" class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <label id="label_xml">Modalidade do Frete</label>
+                                    <input type="text" id="input_mega2" value="<?php ?>" readonly>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </li>
