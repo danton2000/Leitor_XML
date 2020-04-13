@@ -236,67 +236,67 @@
                                     <label id="label_xml">Nome/Razão Social</label>
                                     <input type="text" id="input_mega" value="<?php ?>" readonly>
                                 </div>
-                                
+
                                 <div class="col-sm-6">
                                     <label id="label_xml">CNPJ/CPF/Id.Estrangeiro</label>
                                     <input type="text" id="input_media_grande" value="<?php ?>" readonly>
                                 </div>
-                                
+
                                 <div class="col-sm-6">
                                     <label id="label_xml">Endereço</label>
                                     <input type="text" id="input_media_grande" value="<?php ?>" readonly>
                                 </div>
-                                
+
                                 <div class="col-sm-6">
                                     <label id="label_xml">Bairro/Distrito</label>
                                     <input type="text" id="input_media_grande" value="<?php ?>" readonly>
                                 </div>
-                                
+
                                 <div class="col-sm-6">
                                     <label id="label_xml">CEP</label>
                                     <input type="text" id="input_media_grande" value="<?php ?>" readonly>
                                 </div>
-                                
+
                                 <div class="col-sm-6">
                                     <label id="label_xml">Município</label>
                                     <input type="text" id="input_media_grande" value="<?php ?>" readonly>
                                 </div>
-                                
+
                                 <div class="col-sm-6">
                                     <label id="label_xml">Telefone</label>
                                     <input type="text" id="input_media_grande" value="<?php ?>" readonly>
                                 </div>
-                                
+
                                 <div class="col-sm-6">
                                     <label id="label_xml">UF</label>
                                     <input type="text" id="input_media_grande" value="<?php ?>" readonly>
                                 </div>
-                                
+
                                 <div class="col-sm-6">
                                     <label id="label_xml">Pais</label>
                                     <input type="text" id="input_media_grande" value="<?php ?>" readonly>
                                 </div>
-                                
+
                                 <div class="col-sm-4">
                                     <label id="label_xml">Indicador IE</label>
                                     <input type="text" id="input_media" value="<?php ?>" readonly>
                                 </div>
-                                
+
                                 <div class="col-sm-4">
                                     <label id="label_xml">Inscrição Estadual</label>
                                     <input type="text" id="input_media" value="<?php ?>" readonly>
                                 </div>
-                                
+
                                 <div class="col-sm-4">
                                     <label id="label_xml">Inscrição Suframa</label>
                                     <input type="text" id="input_media" value="<?php ?>" readonly>
                                 </div>
-                                
+
                                 <div class="col">
                                     <label id="label_xml">IM</label>
                                     <input type="text" id="input_media" value="<?php ?>" readonly>
                                 </div>
-                                
+
                                 <div class="col">
                                     <label id="label_xml">E-mail</label>
                                     <input type="text" id="input_big_big" value="<?php ?>" readonly>
@@ -494,7 +494,7 @@
                         <hr id="linha_menu">
                         <h3 id="h3_titulo">Totais</h3>
                         <hr id="linha_menu">
-                       
+
                         <div class="col-12">
                             <h3 id="h3_sub_titulo2">ICMS</h3>
                         </div>
@@ -555,7 +555,7 @@
                                     <label id="label_xml">Valor Total do FCP retido anteriormente por ST</label>
                                     <input type="text" id="input_media" value="<?php ?>" readonly>
                                 </div>
-                                
+
                                 <div class="col-3">
                                     <label id="label_xml">Valor Total dos Produtos</label>
                                     <input type="text" id="input_media" value="<?php ?>" readonly>
@@ -610,7 +610,7 @@
                                     <label id="label_xml">Valor Total da NFe</label>
                                     <input type="text" id="input_media" value="<?php ?>" readonly>
                                 </div>
-                                
+
                                 <div class="col-3">
                                     <label id="label_xml">Valor Aproximado dos Tributos</label>
                                     <input type="text" id="input_media" value="<?php ?>" readonly>
@@ -646,8 +646,52 @@
                 <div class="content">
                     <div id="header_menu">
                         <hr id="linha_menu">
-                        <h3 id="h3_titulo">Cobrança</h3>
+                        <h3 id="h3_titulo">Formas de Pagamento</h3>
                         <hr id="linha_menu">
+                    </div>
+
+                    <div id="conteudo_menu4" class="container">
+                        <div class="row">
+                            <div class="col-4">
+                                <label id="label_xml">Ind. Forma de Pagamento</label>
+                                <input type="text" id="input_media_grande" value="<?php ?>" readonly>
+                            </div>
+
+                            <div class="col-4">
+                                <label id="label_xml">Meio de Pagamento</label>
+                                <input type="text" id="input_grande" value="<?php ?>" readonly>
+                            </div>
+
+                            <div class="col-4">
+                                <label id="label_xml">Valor do Pagamento</label>
+                                <input type="text" id="input_grande" value="<?php ?>" readonly>
+                            </div>
+
+                            <div class="col-3">
+                                <label id="label_xml">Tipo de Integração Pagamento</label>
+                                <input type="text" id="input_media_grande" value="<?php ?>" readonly>
+                            </div>
+
+                            <div class="col-3">
+                                <label id="label_xml">CNPJ da Credenciadora</label>
+                                <input type="text" id="input_media" value="<?php ?>" readonly>
+                            </div>
+
+                            <div class="col-3">
+                                <label id="label_xml">Bandeira da operadora</label>
+                                <input type="text" id="input_media" value="<?php ?>" readonly>
+                            </div>
+
+                            <div class="col-3">
+                                <label id="label_xml">Número de autorização</label>
+                                <input type="text" id="input_media" value="<?php ?>" readonly>
+                            </div>
+
+                            <div class="col-3">
+                                <label id="label_xml">Troco</label>
+                                <input type="text" id="input_media_grande" value="<?php ?>" readonly>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </li>

@@ -29,16 +29,17 @@ body{
     width: 130px;
     height: 65px;
     padding: 8px;
-    background-color: cadetblue;
+    background-color: rgb(223, 223, 223);
     font-size: 18px;
     display: block;
-    color: #fff;
+    color: #000;
     cursor: pointer;
     text-align: center;
 }
 
 .rd_tabs:checked ~ #label{
-    background-color: lightskyblue;
+    color: white;
+    background-color: rgb(65, 81, 223);
 }
 
 .rd_tabs{
@@ -101,16 +102,16 @@ body{
 }
 
 #conteudo_menu{
-    background-color: #d3d3d3;
-    border: skyblue 2px solid;
+    background-color: lightblue;
+    border: black 2px solid;
     width: 1040px;
     padding: 10px;
     margin: 0;
 }
 
 #conteudo_menu2{
-    background-color: #d3d3d3;
-    border: skyblue 2px solid;
+    background-color: lightblue;
+    border: black 2px solid;
     width: 800px;
     padding: 10px 10px;
     margin: 0 130px;
@@ -118,16 +119,16 @@ body{
 }
 
 #conteudo_menu3{
-    background-color: #d3d3d3;
-    border: skyblue 2px solid;
+    background-color: lightblue;
+    border: black 2px solid;
     width: 800px;
     padding: 10px 10px;
     margin: 0 130px;
 }
 
 #conteudo_menu4{
-    background-color: #d3d3d3;
-    border: skyblue 2px solid;
+    background-color: lightblue;
+    border: black 2px solid;
     width: 1040px;
     padding: 10px 10px;
     margin: 0;
