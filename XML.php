@@ -11,8 +11,8 @@
 
 <body>
     <nav class="nav_tabs">
-        <ul>
-            <li>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
                 <input type="radio" name="tabs" class="rd_tabs" id="tab1" checked>
                 <label id="label" for="tab1">NF-e</label>
                 <div class="content">
@@ -22,7 +22,7 @@
                         <hr id="linha_menu">
                     </div>
 
-                    <div id="conteudo_menu" class="container">
+                    <div id="conteudo_menu">
                         <div class="row">
                             <div class="col">
                                 <label id="label_xml">Modelo</label>
@@ -60,7 +60,7 @@
                         <h3 id="h3_sub_titulo">Emitente</h3>
                     </div>
 
-                    <div id="conteudo_menu" class="container">
+                    <div id="conteudo_menu">
                         <div class="row">
                             <div class="col">
                                 <label id="label_xml">CNPJ</label>
@@ -85,7 +85,7 @@
                         <h3 id="h3_sub_titulo">Emissão</h3>
                     </div>
 
-                    <div id="conteudo_menu" class="container">
+                    <div id="conteudo_menu">
                         <div class="row">
                             <div class="col-md-3">
                                 <label id="label_xml">Processo</label>
@@ -134,7 +134,7 @@
                         <h3 id="h3_titulo">Dados do Emitente</h3>
                         <hr id="linha_menu">
 
-                        <div id="conteudo_menu2" class="container">
+                        <div id="conteudo_menu2">
                             <div class="row">
                                 <div class="col-sm-6">
                                     <label id="label_xml">Nome/Razão Social</label>
@@ -230,7 +230,7 @@
                         <h3 id="h3_titulo">Dados do Destinátario</h3>
                         <hr id="linha_menu">
 
-                        <div id="conteudo_menu3" class="container">
+                        <div id="conteudo_menu3">
                             <div class="row">
                                 <div class="col">
                                     <label id="label_xml">Nome/Razão Social</label>
@@ -314,7 +314,7 @@
                         <hr id="linha_menu">
                         <h3 id="h3_titulo">Dados dos Produtos e Serviços</h3>
                         <hr id="linha_menu">
-                        <div id="conteudo_menu4" class="container">
+                        <div id="conteudo_menu4">
                             <div class="row">
                                 <div class="col">
                                     <label id="label_xml">Num.</label>
@@ -499,7 +499,7 @@
                             <h3 id="h3_sub_titulo2">ICMS</h3>
                         </div>
 
-                        <div id="conteudo_menu4" class="container">
+                        <div id="conteudo_menu4">
                             <div class="row">
                                 <div class="col-3">
                                     <label id="label_xml">Base de Cálculo ICMS</label>
@@ -629,7 +629,7 @@
                         <h3 id="h3_titulo">Dados do Transporte</h3>
                         <hr id="linha_menu">
 
-                        <div id="conteudo_menu" class="container">
+                        <div id="conteudo_menu">
                             <div class="row">
                                 <div class="col">
                                     <label id="label_xml">Modalidade do Frete</label>
@@ -650,7 +650,7 @@
                         <hr id="linha_menu">
                     </div>
 
-                    <div id="conteudo_menu4" class="container">
+                    <div id="conteudo_menu4">
                         <div class="row">
                             <div class="col-4">
                                 <label id="label_xml">Ind. Forma de Pagamento</label>
@@ -703,6 +703,46 @@
                         <hr id="linha_menu">
                         <h3 id="h3_titulo">Informações Adicionais</h3>
                         <hr id="linha_menu">
+                    </div>
+
+                    <div id="conteudo_menu4">
+                        <div class="row">
+                            <div class="col">
+                                <label id="label_xml">Formato de impressão DANFE</label>
+                                <input type="text" id="input_mega2" value="<?php ?>" readonly>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="header_sub_menu">
+                        <h3 id="h3_sub_titulo">Informações Complementares de Interesse do Contribuiente</h3>
+                    </div>
+
+                    <div id="conteudo_menu">
+                        <div class="row">
+                            <div class="col">
+                                <label id="label_xml">Descrição</label>
+                                <input type="text" id="input_mega2" value="<?php ?>" readonly>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="header_sub_menu">
+                        <h3 id="h3_sub_titulo">Informações Suplementares</h3>
+                    </div>
+
+                    <div id="conteudo_menu">
+                        <div class="row">
+                            <div class="col">
+                                <label id="label_xml">QR-Code</label>
+                                <input type="text" id="input_mega2" value="<?php ?>" readonly>
+                            </div>
+
+                            <div class="col">
+                                <label id="label_xml">URL NFC-e</label>
+                                <input type="text" id="input_mega2" value="<?php ?>" readonly>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </li>
