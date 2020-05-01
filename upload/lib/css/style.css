@@ -9,60 +9,16 @@ body{
     font-family: 'Arial';
 }
 
-.nav_tabs{
-    width: 1200px;
-    height: 400px;
-    background-color: #fff;
-    position: relative;
-}
-
-.nav_tabs ul{
-    list-style: none;
-}
-
-.nav_tabs ul li{
-    float: left;
-}
-
-.nav_tabs #label{
-    width: 130px;
-    height: 65px;
-    padding: 8px;
-    background-color: rgb(223, 223, 223);
-    font-size: 18px;
-    display: block;
-    color: #000;
-    cursor: pointer;
-    text-align: center;
-}
-
-.rd_tabs:checked ~ #label{
+#btn_voltar{
+    background-color: rgb(112, 159, 212);
     color: white;
-    background-color: rgb(65, 81, 223);
+    font-size: 14px;
+    margin-left: 15px;
 }
 
-.rd_tabs{
-    display: none;
-}
-
-.content{
-    margin-top: -8px;
-    border-top: 5px solid steelblue;
-    display: none;
-    position: absolute;
-    height: 20px;
-    width: 1040px;
-    left: 0px;
-
-}
-
-.content div{
-  
-
-}
-
-.rd_tabs:checked ~ .content{
-    display: block;
+#btn_voltar:hover{
+    background-color: rgb(168, 163, 168);
+    color: white;
 }
 
 /*conteudo da XML*/
@@ -103,7 +59,6 @@ body{
 #conteudo_menu{
     background-color: lightblue;
     border: black 2px solid;
-    width: 1040px;
     padding: 10px;
     margin: 0;
 }
@@ -111,25 +66,22 @@ body{
 #conteudo_menu2{
     background-color: lightblue;
     border: black 2px solid;
-    width: 800px;
-    padding: 10px 10px;
-    margin: 0 130px;
-    text-align: center;
+    padding: 10px;
+    margin: 0;
+   
 }
 
 #conteudo_menu3{
     background-color: lightblue;
     border: black 2px solid;
-    width: 800px;
-    padding: 10px 10px;
-    margin: 0 130px;
+    padding: 10px;
+    margin: 0;
 }
 
 #conteudo_menu4{
     background-color: lightblue;
     border: black 2px solid;
-    width: 1040px;
-    padding: 10px 10px;
+    padding: 10px;
     margin: 0;
     
 }
@@ -142,58 +94,8 @@ body{
     display: block;
 }
 
-#input_super_small{
-    width: 30px;
+#input{
     text-align: center;
+    margin-bottom: 20px;
 }
-
-#input_small{
-    width: 80px;
-    text-align: center;
-}
-
-#input_big{
-    width: 250px;
-    text-align: center;
-}
-
-#input_big_big{
-    width: 300px;
-    text-align: center;
-}
-
-#input_big_big2{
-    width: 370px;
-    text-align: center;
-}
-
-#input_grande{
-    width: 300px;
-    height: 30px;
-    text-align: center;
-}
-
-#input_media_grande{
-    width: 210px;
-    text-align: center;
-}
-
-#input_media{
-    width: 170px;
-    text-align: center;
-}
-
-#input_mega{
-    width: 500px;
-    text-align: center;
-}
-
-#input_mega2{
-    width: 1000px;
-    text-align: center;
-}
-
-
-
-
 
