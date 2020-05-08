@@ -21,23 +21,23 @@ $extensao = end($array); //pega o ultimo endice que é a extensão do arquivo
 $destino = "arquivos/" . "$nome" . "." . $extensao;
 
 if ($extensao == "xml") {
-	if ($tamanho_limite >= $tamanho) {
-		# Realizando o upload
-		if (move_uploaded_file($tmp, $destino)) {
-			echo "Upload do arquivo $nome enviado!"."<br>";
+    if ($tamanho_limite >= $tamanho) {
+        # Realizando o upload
+        if (move_uploaded_file($tmp, $destino)) {
+            echo "Upload do arquivo $nome enviado!" . "<br>";
             $xml = simplexml_load_file($destino);
             unlink($destino);
-            
-			$objeto = $xml;
 
-			foreach ($objeto->NFe as $key => $item) {
-				if (isset($item->infNFe)) {
+            $objeto = $xml;
+
+            foreach ($objeto->NFe as $key => $item) {
+                if (isset($item->infNFe)) {
                     //NF-e
-					$nNF = $item->infNFe->ide->nNF;
-					$mod = $item->infNFe->ide->mod;
-					$serie = $item->infNFe->ide->serie;
-					$nNF = $item->infNFe->ide->nNF;
-					$dhEmi = $item->infNFe->ide->dhEmi;
+                    $nNF = $item->infNFe->ide->nNF;
+                    $mod = $item->infNFe->ide->mod;
+                    $serie = $item->infNFe->ide->serie;
+                    $nNF = $item->infNFe->ide->nNF;
+                    $dhEmi = $item->infNFe->ide->dhEmi;
                     $vNF = $item->infNFe->total->ICMSTot->vNF;
                     $cnpj = $item->infNFe->emit->CNPJ;
                     $xNome = $item->infNFe->emit->xNome;
@@ -69,6 +69,23 @@ if ($extensao == "xml") {
                     $cMun = $item->infNFe->emit->enderEmit->cMun;
                     $CRT = $item->infNFe->emit->CRT;
 
+                    //Destinatário
+                    $DCNPJ = $item->infNFe->dest->CNPJ;
+                    $DxNome = $item->infNFe->dest->xNome;
+                    $DLgr = $item->infNFe->dest->enderDest->xLgr;
+                    $Dxnro = $item->infNFe->dest->enderDest->xnro;
+                    $DxBairro = $item->infNFe->dest->enderDest->xBairro;
+                    $DcMun = $item->infNFe->dest->enderDest->cMun;
+                    $DxMun = $item->infNFe->dest->enderDest->xMun;
+                    $DUF = $item->infNFe->dest->enderDest->UF;
+                    $DCEP = $item->infNFe->dest->enderDest->CEP;
+                    $DcPais = $item->infNFe->dest->enderDest->cPais;
+                    $DxPais = $item->infNFe->dest->enderDest->xPais;
+                    $Dfone = $item->infNFe->dest->enderDest->fone;
+                    $indIEDest = $item->infNFe->dest->indIEDest;
+                    $DIE = $item->infNFe->dest->IE;
+                    $email = $item->infNFe->dest->email;
+
                     //produtos e serviços
                     $xProd = $item->infNFe->det->prod->xProd;
                     $qCom = $item->infNFe->det->prod->qCom;
@@ -81,6 +98,7 @@ if ($extensao == "xml") {
                     $cEAN = $item->infNFe->det->prod->cEAN;
                     $uCom = $item->infNFe->det->prod->uCom;
                     $qCom = $item->infNFe->det->prod->qCom;
+                    $CFOP = $item->infNFe->det->prod->CFOP;
                     $cEANTrib = $item->infNFe->det->prod->cEANTrib;
                     $uTrib = $item->infNFe->det->prod->uTrib;
                     $qTrib = $item->infNFe->det->prod->qTrib;
@@ -124,19 +142,17 @@ if ($extensao == "xml") {
                     $infCpl = $item->infNFe->infAdic->infCpl;
                     $qrCode = $item->infNFeSupl->qrCode;
                     $urlChave = $item->infNFeSupl->urlChave;
-                    
-				}
-			}
-
-		} else {
-			echo "Falha ocorreu algum erro";
-		}
-	} else {
-		echo "Falha! Tamanho do arquivo $nome maior de $tamanho_limite";
-	}
+                }
+            }
+        } else {
+            echo "Falha ocorreu algum erro";
+        }
+    } else {
+        echo "Falha! Tamanho do arquivo $nome maior de $tamanho_limite";
+    }
 } else {
-	echo "Extensão do arquivo $nome não está correta!";
-	echo "<hr>";
+    echo "Extensão do arquivo $nome não está correta!";
+    echo "<hr>";
 }
 
 ?>
@@ -160,7 +176,7 @@ if ($extensao == "xml") {
     <a href="index.php" class="btn" id="btn_voltar">Voltar</a>
     <div class="container">
         <ul class="nav nav-tabs">
-            <li ><a data-toggle="tab" href="#menu1">NF-e</a></li>
+            <li><a data-toggle="tab" href="#menu1">NF-e</a></li>
             <li><a data-toggle="tab" href="#menu2">Emitente</a></li>
             <li><a data-toggle="tab" href="#menu3">Destinatário</a></li>
             <li><a data-toggle="tab" href="#menu4">Produtos e Serviços</a></li>
@@ -375,57 +391,57 @@ if ($extensao == "xml") {
                     <div class="row form-group">
                         <div class="col">
                             <label id="label_xml">Nome/Razão Social</label>
-                            <input type="text" class="form-control" id="input" value="<?php ?>" readonly>
+                            <input type="text" class="form-control" id="input" value="<?php echo $DxNome; ?>" readonly>
                         </div>
 
                         <div class="col-sm-6">
                             <label id="label_xml">CNPJ/CPF/Id.Estrangeiro</label>
-                            <input type="text" class="form-control" id="input" value="<?php ?>" readonly>
+                            <input type="text" class="form-control" id="input" value="<?php echo $DCNPJ; ?>" readonly>
                         </div>
 
                         <div class="col-sm-6">
                             <label id="label_xml">Endereço</label>
-                            <input type="text" class="form-control" id="input" value="<?php ?>" readonly>
+                            <input type="text" class="form-control" id="input" value="<?php echo $DLgr; ?>" readonly>
                         </div>
 
                         <div class="col-sm-6">
                             <label id="label_xml">Bairro/Distrito</label>
-                            <input type="text" class="form-control" id="input" value="<?php ?>" readonly>
+                            <input type="text" class="form-control" id="input" value="<?php echo $DxBairro; ?>" readonly>
                         </div>
 
                         <div class="col-sm-6">
                             <label id="label_xml">CEP</label>
-                            <input type="text" class="form-control" id="input" value="<?php ?>" readonly>
+                            <input type="text" class="form-control" id="input" value="<?php echo $DCEP; ?>" readonly>
                         </div>
 
                         <div class="col-sm-6">
                             <label id="label_xml">Município</label>
-                            <input type="text" class="form-control" id="input" value="<?php ?>" readonly>
+                            <input type="text" class="form-control" id="input" value="<?php echo $DxMun; ?>" readonly>
                         </div>
 
                         <div class="col-sm-6">
                             <label id="label_xml">Telefone</label>
-                            <input type="text" class="form-control" id="input" value="<?php ?>" readonly>
+                            <input type="text" class="form-control" id="input" value="<?php echo $Dfone; ?>" readonly>
                         </div>
 
                         <div class="col-sm-6">
                             <label id="label_xml">UF</label>
-                            <input type="text" class="form-control" id="input" value="<?php ?>" readonly>
+                            <input type="text" class="form-control" id="input" value="<?php echo $DUF; ?>" readonly>
                         </div>
 
                         <div class="col-sm-6">
                             <label id="label_xml">Pais</label>
-                            <input type="text" class="form-control" id="input" value="<?php ?>" readonly>
+                            <input type="text" class="form-control" id="input" value="<?php echo $DxPais; ?>" readonly>
                         </div>
 
                         <div class="col-sm-4">
                             <label id="label_xml">Indicador IE</label>
-                            <input type="text" class="form-control" id="input" value="<?php ?>" readonly>
+                            <input type="text" class="form-control" id="input" value="<?php echo $indIEDest; ?>" readonly>
                         </div>
 
                         <div class="col-sm-4">
                             <label id="label_xml">Inscrição Estadual</label>
-                            <input type="text" class="form-control" id="input" value="<?php ?>" readonly>
+                            <input type="text" class="form-control" id="input" value="<?php echo $DIE; ?>" readonly>
                         </div>
 
                         <div class="col-sm-4">
@@ -440,149 +456,62 @@ if ($extensao == "xml") {
 
                         <div class="col">
                             <label id="label_xml">E-mail</label>
-                            <input type="text" class="form-control" id="input" value="<?php ?>" readonly>
+                            <input type="text" class="form-control" id="input" value="<?php echo $email; ?>" readonly>
                         </div>
                     </div>
                 </div>
             </div>
+            
             <div id="menu4" class="tab-pane fade">
                 <h3 id="h3_titulo">Dados dos Produtos e Serviços</h3>
+                <div id="conteudo_tabela" class="table-responsive">
+                    <div class="table-wrapper-scroll-y my-custom-scrollbar">
+                        <table class="table table-bordered " id="tabela_produto">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <!-- <th scope="col">Num.</th> -->
+                                    <th scope="col">Cod.</th>
+                                    <th scope="col">Descriçao</th>
+                                    <th scope="col">EAN</th>
+                                    <th scope="col">CFOP</th>
+                                    <th scope="col">NCM</th>
+                                    <th scope="col">Quantidade</th>
+                                    <th scope="col">Unid. Com.</th>
+                                    <th scope="col">Valor Unit.</th>
+                                    <th scope="col">Valor Prod.</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php
+                                foreach ($xml->NFe as $key => $item) {
+                                    if (isset($item->infNFe)) {
+
+                                        $det = $item->infNFe->det;
+                                        foreach ($det as $valor) {
+                                            echo '<tr>';
+                                            echo '<td>' . htmlspecialchars($valor->prod->cProd) . '</td>';
+                                            echo '<td>' . htmlspecialchars($valor->prod->xProd) . '</td>';
+                                            echo '<td>' . htmlspecialchars($valor->prod->cEAN) . '</td>';
+                                            echo '<td>' . htmlspecialchars($valor->prod->CFOP) . '</td>';
+                                            echo '<td>' . htmlspecialchars($valor->prod->NCM) . '</td>';
+                                        
+                                            
+                                            echo '<td>' . htmlspecialchars($valor->prod->qCom) . '</td>';
+                                            echo '<td>' . htmlspecialchars($valor->prod->uCom) . '</td>';
+                                            echo '<td>' . htmlspecialchars($valor->prod->vUnCom) . '</td>';
+                                            echo '<td>' . htmlspecialchars($valor->prod->vProd) . '</td>';
+                                            echo '</tr>';
+                                        }
+                                    }
+                                }
+                                ?>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
                 <div id="conteudo_menu4">
                     <div class="row form-group">
-                        <div class="col-md-4">
-                            <label id="label_xml">Num.</label>
-                            <input type="text" class="form-control" id="input" value="<?php ?>" readonly>
-                        </div>
-                        <div class="col-md-4">
-                            <label id="label_xml">Descrição</label>
-                            <input type="text" class="form-control" id="input" value="<?php echo $xProd; ?>" readonly>
-                        </div>
-                        <div class="col-md-4">
-                            <label id="label_xml">Qtd</label>
-                            <input type="text" class="form-control" id="input" value="<?php echo $qCom; ?>" readonly>
-                        </div>
-                        <div class="col-md-4">
-                            <label id="label_xml">Unidade Comercial</label>
-                            <input type="text" class="form-control" id="input" value="<?php echo $uCom; ?>" readonly>
-                        </div>
-                        <div class="col-md-4">
-                            <label id="label_xml">Valor(R$)</label>
-                            <input type="text" class="form-control" id="input" value="<?php echo $vProd; ?>" readonly>
-                        </div>
-                        <div class="col-md-4">
-                            <label id="label_xml">Código do Produto</label>
-                            <input type="text" class="form-control" id="input" value="<?php echo $cProd; ?>" readonly>
-                        </div>
-                        <div class="col-md-4">
-                            <label id="label_xml">Código NCM</label>
-                            <input type="text" class="form-control" id="input" value="<?php echo $NCM; ?>" readonly>
-                        </div>
-                        <div class="col-md-4">
-                            <label id="label_xml">Código CEST</label>
-                            <input type="text" class="form-control" id="input" value="<?php ?>" readonly>
-                        </div>
-                        <div class="col-md-4">
-                            <label id="label_xml">Indicador de Escada Relevante</label>
-                            <input type="text" class="form-control" id="input" value="<?php ?>" readonly>
-                        </div>
-                        <div class="col-md-4">
-                            <label id="label_xml">CNPJ do Fabricante da Mercadoria</label>
-                            <input type="text" class="form-control" id="input" value="<?php ?>" readonly>
-                        </div>
-                        <div class="col-md-4">
-                            <label id="label_xml">Código de Benefício Fiscal na UF</label>
-                            <input type="text" class="form-control" id="input" value="<?php ?>" readonly>
-                        </div>
-                        <div class="col-md-4">
-                            <label id="label_xml">Código EX da TIPI</label>
-                            <input type="text" class="form-control" id="input" value="<?php ?>" readonly>
-                        </div>
-                        <div class="col-md-4">
-                            <label id="label_xml">CFOP</label>
-                            <input type="text" class="form-control" id="input" value="<?php ?>" readonly>
-                        </div>
-                        <div class="col-md-4">
-                            <label id="label_xml">Outras Despesas Acessórias</label>
-                            <input type="text" class="form-control" id="input" value="<?php ?>" readonly>
-                        </div>
-                        <div class="col-md-4">
-                            <label id="label_xml">Valor do Desconto</label>
-                            <input type="text" class="form-control" id="input" value="<?php ?>" readonly>
-                        </div>
-                        <div class="col-md-4">
-                            <label id="label_xml">Valor Total do Frete</label>
-                            <input type="text" class="form-control" id="input" value="<?php ?>" readonly>
-                        </div>
-                        <div class="col-md-4">
-                            <label id="label_xml">Valor do Seguro</label>
-                            <input type="text" class="form-control" id="input" value="<?php ?>" readonly>
-                        </div>
-
-                        <div class="col-md-4">
-                            <label id="label_xml">Indicador de Composicão do Valor Total da NF-e</label>
-                            <input type="text" class="form-control" id="input" value="<?php echo $indTot; ?>" readonly>
-                        </div>
-
-                        <div class="col-md-4">
-                            <label id="label_xml">Código EAN Comercial</label>
-                            <input type="text" class="form-control" id="input" value="<?php echo $cEAN; ?>" readonly>
-                        </div>
-
-                        <div class="col-md-4">
-                            <label id="label_xml">Unidade Comercial</label>
-                            <input type="text" class="form-control" id="input" value="<?php echo $uCom; ?>" readonly>
-                        </div>
-
-                        <div class="col-md-4">
-                            <label id="label_xml">Quantidade Comercial</label>
-                            <input type="text" class="form-control" id="input" value="<?php echo $qCom; ?>" readonly>
-                        </div>
-
-                        <div class="col-md-4">
-                            <label id="label_xml">Código EAN Tributável</label>
-                            <input type="text" class="form-control" id="input" value="<?php echo $cEANTrib; ?>" readonly>
-                        </div>
-
-                        <div class="col-md-4">
-                            <label id="label_xml">Unidade Tributável</label>
-                            <input type="text" class="form-control" id="input" value="<?php echo $uTrib; ?>" readonly>
-                        </div>
-
-                        <div class="col-md-4">
-                            <label id="label_xml">Quantidade Tributável</label>
-                            <input type="text" class="form-control" id="input" value="<?php echo $qTrib; ?>" readonly>
-                        </div>
-
-                        <div class="col-md-4">
-                            <label id="label_xml">Valor unitário de comercialização</label>
-                            <input type="text" class="form-control" id="input" value="<?php echo $vUnCon; ?>" readonly>
-                        </div>
-
-                        <div class="col-md-4">
-                            <label id="label_xml">Valor unitário de tributação</label>
-                            <input type="text" class="form-control" id="input" value="<?php echo $vUnTrib; ?>" readonly>
-                        </div>
-
-                        <div class="col-md-4">
-                            <label id="label_xml">Número do pedido de compra</label>
-                            <input type="text" class="form-control" id="input" value="<?php ?>" readonly>
-                        </div>
-
-                        <div class="col-md-4">
-                            <label id="label_xml">Item do pedido de compra</label>
-                            <input type="text" class="form-control" id="input" value="<?php ?>" readonly>
-                        </div>
-
-                        <div class="col-md-4">
-                            <label id="label_xml">Valor Aproximado dos Tributos</label>
-                            <input type="text" class="form-control" id="input" value="<?php ?>" readonly>
-                        </div>
-
-                        <div class="col-md-4">
-                            <label id="label_xml">Número da FCI</label>
-                            <input type="text" class="form-control" id="input" value="<?php ?>" readonly>
-                        </div>
-
                         <div class="col-12">
                             <h3 id="h3_sub_titulo2">ICMS Normal e ST</h3>
                         </div>

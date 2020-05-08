@@ -99,3 +99,20 @@ body{
     margin-bottom: 20px;
 }
 
+#tabela_produto{
+    
+}
+.my-custom-scrollbar {
+	position: relative;
+	height: 400px;
+	overflow: auto;
+	margin: auto 0px;
+}
+.table-wrapper-scroll-y {
+	display: block;
+}
+#conteudo_tabela{
+    background-color: lightblue;
+    border: black 2px solid;
+    margin-bottom: 10px;
+}
