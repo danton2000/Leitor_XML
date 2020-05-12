@@ -469,15 +469,15 @@ if ($extensao == "xml") {
                             <thead class="thead-dark">
                                 <tr>
                                     <!-- <th scope="col">Num.</th> -->
-                                    <th scope="col">Cod.</th>
-                                    <th scope="col">Descriçao</th>
-                                    <th scope="col">EAN</th>
-                                    <th scope="col">CFOP</th>
-                                    <th scope="col">NCM</th>
-                                    <th scope="col">Quantidade</th>
-                                    <th scope="col">Unid. Com.</th>
-                                    <th scope="col">Valor Unit.</th>
-                                    <th scope="col">Valor Prod.</th>
+                                    <th class="coluna" scope="col">Cod.</th>
+                                    <th class="coluna" scope="col">Descriçao</th>
+                                    <th class="coluna" scope="col">EAN</th>
+                                    <th class="coluna" scope="col">CFOP</th>
+                                    <th class="coluna" scope="col">NCM</th>
+                                    <th class="coluna" scope="col">Quantidade</th>
+                                    <th class="coluna" scope="col">Unid. Com.</th>
+                                    <th class="coluna" scope="col">Valor Unit.</th>
+                                    <th class="coluna" scope="col">Valor Prod.</th>
                                 </tr>
                             </thead>
                             <tbody>

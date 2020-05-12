@@ -111,6 +111,10 @@ body{
 }
 
 
+.table .thead-dark th{
+    text-align: center;
+}     
+
 .my-custom-scrollbar {
 	position: relative;
 	height: 400px;
