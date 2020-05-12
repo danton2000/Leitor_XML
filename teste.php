@@ -159,9 +159,7 @@
 
                         <div class="col-sm-6">
                             <label id="label_xml">Endereço</label>
-                            <input type="text" class="form-control" id="input" value="<?php echo $xLgr;
-                                                                                        echo ", ";
-                                                                                        echo $nro; ?>" readonly>
+                            <input type="text" class="form-control" id="input" value="<?php echo $xLgr; echo ", "; echo $nro; ?>" readonly>
                         </div>
 
                         <div class="col-sm-6">

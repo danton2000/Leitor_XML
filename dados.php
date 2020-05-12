@@ -24,7 +24,7 @@ if ($extensao == "xml") {
     if ($tamanho_limite >= $tamanho) {
         # Realizando o upload
         if (move_uploaded_file($tmp, $destino)) {
-            echo "Upload do arquivo $nome enviado!" . "<br>";
+            echo "<script>alert('Upload do arquivo $nome enviado!')</script>";
             $xml = simplexml_load_file($destino);
             unlink($destino);
 
@@ -145,14 +145,13 @@ if ($extensao == "xml") {
                 }
             }
         } else {
-            echo "Falha ocorreu algum erro";
+            echo "<script>alert('Falha ocorreu algum erro!')</script>";
         }
     } else {
-        echo "Falha! Tamanho do arquivo $nome maior de $tamanho_limite";
+        echo "<script>alert('Falha! Tamanho do arquivo $nome maior de $tamanho_limite')</script>";
     }
 } else {
-    echo "Extensão do arquivo $nome não está correta!";
-    echo "<hr>";
+    echo "<script>alert('Arquivo não reconhecido!')</script>";
 }
 
 ?>
@@ -176,7 +175,7 @@ if ($extensao == "xml") {
     <a href="index.php" class="btn" id="btn_voltar">Voltar</a>
     <div class="container">
         <ul class="nav nav-tabs">
-            <li><a data-toggle="tab" href="#menu1">NF-e</a></li>
+            <li class="active"><a class="nav-link" data-toggle="tab" href="#menu1">NF-e</a></li>
             <li><a data-toggle="tab" href="#menu2">Emitente</a></li>
             <li><a data-toggle="tab" href="#menu3">Destinatário</a></li>
             <li><a data-toggle="tab" href="#menu4">Produtos e Serviços</a></li>
@@ -483,27 +482,33 @@ if ($extensao == "xml") {
                             </thead>
                             <tbody>
                                 <?php
-                                foreach ($xml->NFe as $key => $item) {
-                                    if (isset($item->infNFe)) {
 
-                                        $det = $item->infNFe->det;
-                                        foreach ($det as $valor) {
-                                            echo '<tr>';
-                                            echo '<td>' . htmlspecialchars($valor->prod->cProd) . '</td>';
-                                            echo '<td>' . htmlspecialchars($valor->prod->xProd) . '</td>';
-                                            echo '<td>' . htmlspecialchars($valor->prod->cEAN) . '</td>';
-                                            echo '<td>' . htmlspecialchars($valor->prod->CFOP) . '</td>';
-                                            echo '<td>' . htmlspecialchars($valor->prod->NCM) . '</td>';
-                                        
+                                if (!file_exists($destino)) {
+                                    foreach ($xml->NFe as $key => $item) {
+                                        if (isset($item->infNFe)) {
+    
+                                            $det = $item->infNFe->det;
+                                            foreach ($det as $valor) {
+                                                echo '<tr>';
+                                                echo '<td>' . htmlspecialchars($valor->prod->cProd) . '</td>';
+                                                echo '<td>' . htmlspecialchars($valor->prod->xProd) . '</td>';
+                                                echo '<td>' . htmlspecialchars($valor->prod->cEAN) . '</td>';
+                                                echo '<td>' . htmlspecialchars($valor->prod->CFOP) . '</td>';
+                                                echo '<td>' . htmlspecialchars($valor->prod->NCM) . '</td>';
                                             
-                                            echo '<td>' . htmlspecialchars($valor->prod->qCom) . '</td>';
-                                            echo '<td>' . htmlspecialchars($valor->prod->uCom) . '</td>';
-                                            echo '<td>' . htmlspecialchars($valor->prod->vUnCom) . '</td>';
-                                            echo '<td>' . htmlspecialchars($valor->prod->vProd) . '</td>';
-                                            echo '</tr>';
+                                                
+                                                echo '<td>' . htmlspecialchars($valor->prod->qCom) . '</td>';
+                                                echo '<td>' . htmlspecialchars($valor->prod->uCom) . '</td>';
+                                                echo '<td>' . htmlspecialchars($valor->prod->vUnCom) . '</td>';
+                                                echo '<td>' . htmlspecialchars($valor->prod->vProd) . '</td>';
+                                                echo '</tr>';
+                                            }
                                         }
                                     }
+                                }else{
+                                    echo "SEM PRODUTOS";
                                 }
+                                
                                 ?>
                             </tbody>
                         </table>

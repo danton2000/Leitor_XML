@@ -9,6 +9,21 @@ body{
     font-family: 'Arial';
 }
 
+.nav-tabs li a{
+    color: #000 !important;
+    font-weight: bold;
+    font: 20px;
+}
+
+.nav-tabs li a:hover{
+    color: rgb(112, 159, 212)!important;
+}
+
+.nav-tabs li.active a{
+    background-color: rgb(112, 159, 212)!important;
+    color: white !important;
+}
+
 #btn_voltar{
     background-color: rgb(112, 159, 212);
     color: white;
@@ -22,9 +37,6 @@ body{
 }
 
 /*conteudo da XML*/
-#header_menu{
-
-}
 
 #header_sub_menu{
     margin-top: 10px;
@@ -48,45 +60,43 @@ body{
     margin-left: 10px;
     margin-bottom: 10px;
     margin-top: 10px;
+    color: white;
 }
 
-#linha_menu{
-    border-top: 1px solid black;
-    margin-bottom: 5px;
-    margin-top: 10px;
-}
+
 
 #conteudo_menu{
-    background-color: lightblue;
-    border: black 2px solid;
+    background-color: rgb(73, 105, 245);
+    border: rgb(128, 124, 124) 2px solid;
     padding: 10px;
     margin: 0;
 }
 
 #conteudo_menu2{
-    background-color: lightblue;
-    border: black 2px solid;
+    background-color: rgb(73, 105, 245);
+    border: rgb(128, 124, 124) 2px solid;
     padding: 10px;
     margin: 0;
    
 }
 
 #conteudo_menu3{
-    background-color: lightblue;
-    border: black 2px solid;
+    background-color: rgb(73, 105, 245);
+    border: rgb(128, 124, 124) 2px solid;
     padding: 10px;
     margin: 0;
 }
 
 #conteudo_menu4{
-    background-color: lightblue;
-    border: black 2px solid;
+    background-color: rgb(73, 105, 245);
+    border: rgb(128, 124, 124) 2px solid;
     padding: 10px;
     margin: 0;
     
 }
 
 #label_xml{
+    color: white;
     margin-bottom: 10px;
     margin-top: 10px;
     font-weight: bold;
@@ -99,9 +109,7 @@ body{
     margin-bottom: 20px;
 }
 
-#tabela_produto{
-    
-}
+
 .my-custom-scrollbar {
 	position: relative;
 	height: 400px;
@@ -112,7 +120,12 @@ body{
 	display: block;
 }
 #conteudo_tabela{
-    background-color: lightblue;
-    border: black 2px solid;
+    background-color: rgb(73, 105, 245);
+    border: rgb(128, 124, 124) 2px solid;
     margin-bottom: 10px;
+}
+tbody{
+    font-weight: bold;
+    color: white;
+    text-align: center;
 }
