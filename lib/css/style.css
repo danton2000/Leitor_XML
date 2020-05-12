@@ -27,6 +27,7 @@ body{
 #btn_voltar{
     background-color: rgb(112, 159, 212);
     color: white;
+    font-weight: bold;
     font-size: 14px;
     margin-left: 15px;
 }
