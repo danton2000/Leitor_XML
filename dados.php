@@ -38,6 +38,7 @@ if ($extensao == "xml") {
                     $serie = $item->infNFe->ide->serie;
                     $nNF = $item->infNFe->ide->nNF;
                     $dhEmi = $item->infNFe->ide->dhEmi;
+                    $dhSaiEnt = $item->infNFe->ide->dhSaiEnt;
                     $vNF = $item->infNFe->total->ICMSTot->vNF;
                     $cnpj = $item->infNFe->emit->CNPJ;
                     $xNome = $item->infNFe->emit->xNome;
@@ -127,13 +128,14 @@ if ($extensao == "xml") {
                     $vIPIDevol = $item->infNFe->total->ICMSTot->vIPIDevol;
                     $vPIS = $item->infNFe->total->ICMSTot->vPIS;
                     $vCOFINS = $item->infNFe->total->ICMSTot->vCOFINS;
-                    $vOutros = $item->infNFe->total->ICMSTot->vOutros;
+                    $vOutro = $item->infNFe->total->ICMSTot->vOutro;
                     $vNF = $item->infNFe->total->ICMSTot->vNF;
 
                     //Transporte
                     $modFrete = $item->infNFe->transp->modFrete;
 
                     //Cobrança
+                    $indPag = $item->infNFe->pag->detPag->indPag;
                     $tPag = $item->infNFe->pag->detPag->tPag;
                     $vPag = $item->infNFe->pag->detPag->vPag;
 
@@ -213,7 +215,7 @@ if ($extensao == "xml") {
 
                         <div class="col-md-4">
                             <label id="label_xml">Data Saída/Entrada</label>
-                            <input type="text" class="form-control" id="input" value="<?php ?>" readonly>
+                            <input type="text" class="form-control" id="input" value="<?php echo $dhSaiEnt; ?>" readonly>
                         </div>
 
                         <div class="col-md-4">
@@ -286,7 +288,7 @@ if ($extensao == "xml") {
 
                         <div class="col-md-3">
                             <label id="label_xml">Forma de Pagamento</label>
-                            <input type="text" class="form-control" id="input" value="<?php ?>" readonly>
+                            <input type="text" class="form-control" id="input" value="<?php echo $indPag; ?>" readonly>
                         </div>
                     </div>
                 </div>
@@ -662,7 +664,7 @@ if ($extensao == "xml") {
 
                         <div class="col-md-4">
                             <label id="label_xml">Outras Despesas Acessórios</label>
-                            <input type="text" class="form-control" id="input" value="<?php echo $vOutros; ?>" readonly>
+                            <input type="text" class="form-control" id="input" value="<?php echo $vOutro; ?>" readonly>
                         </div>
 
                         <div class="col-md-4">
@@ -694,7 +696,7 @@ if ($extensao == "xml") {
                     <div class="row form-group">
                         <div class="col-md-4">
                             <label id="label_xml">Ind. Forma de Pagamento</label>
-                            <input type="text" class="form-control" id="input" value="<?php ?>" readonly>
+                            <input type="text" class="form-control" id="input" value="<?php echo $indPag; ?>" readonly>
                         </div>
 
                         <div class="col-md-4">
